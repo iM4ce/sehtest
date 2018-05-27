@@ -51,7 +51,8 @@ public class Table{
 				this.rows[x] = this.generateRow(this.rows[x], this.directions);
 			}
 		} else {
-			this.setRow(window);
+			window.setListening(true);
+			window.addKeyListener(window);
 		}
 	}
 
@@ -82,9 +83,10 @@ public class Table{
 
 		return row;
 	}
-
-	public void setRow(MainWindow window) {
-		window.addKeyListener(window);
+	
+	public void setRow() {
+		
+		
 		
 	}
 

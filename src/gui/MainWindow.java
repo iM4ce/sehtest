@@ -256,4 +256,7 @@ public class MainWindow extends JFrame implements KeyListener {
 		}
 
 	}
+	public void setListening(boolean b) {
+		this.listening=b;
+	}
 }

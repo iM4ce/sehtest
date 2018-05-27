@@ -19,6 +19,9 @@ public class Main {
 
 		// Lets get the input
 		System.out.println("Input:");
+		char c = '8';
+		int i=c;
+		System.out.println(i);
 		Ergebnis ergebnis = new Ergebnis(0, window);
 	
 		/*MainWindow window2 = new MainWindow(ergebnis);
