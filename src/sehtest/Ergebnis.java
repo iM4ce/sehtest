@@ -51,22 +51,5 @@ public class Ergebnis extends Table {
 		super.setRing(direction, event);
 	}
 
-	/*@Override
-	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
-		super.keyTyped(e);
-	}
-
-	@Override
-	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
-		super.keyPressed(e);
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
-		super.keyReleased(e);
-	}*/
 
 }

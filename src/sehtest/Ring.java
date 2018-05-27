@@ -4,7 +4,6 @@ public class Ring {
 
 	private String path;
 	private String direction;
-	private boolean correct;
 
 	public Ring(String direction) {
 
@@ -73,14 +72,6 @@ public class Ring {
 
 	public String getPath() {
 		return this.path;
-	}
-
-	public void setCorrect() {
-
-	}
-
-	public boolean isCorrect() {
-		return correct;
 	}
 
 }

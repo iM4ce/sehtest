@@ -25,8 +25,8 @@ public class Table{
 	// Koordinaten für Adressierung Ringe in rows[][]
 	private int x;
 	private int y;
-	// Zuhören
-	boolean listening = false;
+	//Tabelle fertig?
+	boolean isSet;
 	// Richtungen
 	final String N = "N";
 	final String NE = "NE";
@@ -52,8 +52,6 @@ public class Table{
 			}
 		} else {
 			this.setRow(window);
-			window.removeKeyListener(event);
-			System.out.println("Hallo");
 		}
 	}
 
@@ -88,9 +86,6 @@ public class Table{
 	public void setRow(MainWindow window) {
 		EventHandler event = new EventHandler();
 		window.addKeyListener(event);
-		while(event.isListening()) {
-			
-		}
 		
 	}
 
@@ -120,21 +115,5 @@ public class Table{
 
 	}
 
-	/*@Override
-	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
-
-		
-		// TODO Auto-generated method stub
-	}*/
 
 }
