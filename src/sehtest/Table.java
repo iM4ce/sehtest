@@ -41,7 +41,7 @@ public class Table{
 
 	// Erzeuge eine Tabelle random oder custom und gebe das Fenster mit um Objekte
 	// zu ändern
-	public Table(int random, MainWindow window, EventHandler event) {
+	public Table(int random, MainWindow window) {
 
 		this.x = 0;
 		this.y = 0;
@@ -84,12 +84,11 @@ public class Table{
 	}
 
 	public void setRow(MainWindow window) {
-		EventHandler event = new EventHandler();
-		window.addKeyListener(event);
+		window.addKeyListener(window);
 		
 	}
 
-	public void setRing(String direction, EventHandler event) {
+	public void setRing(String direction) {
 		int x = this.x;
 		int y = this.y;
 
@@ -97,7 +96,6 @@ public class Table{
 			// Ende
 			this.rows[x][y] = new Ring(direction);
 			System.out.println(this.rows[x][y].getDirection() + "||X: " + x + "||Y: " + y);
-			event.setListening(false);
 			System.out.println("Auswertung");
 		} else {
 			if (x < this.rowCount) {
@@ -108,7 +106,6 @@ public class Table{
 				} else {
 					this.y = 0;
 					this.x++;
-					this.setRing(direction, event);
 				}
 			}
 		}

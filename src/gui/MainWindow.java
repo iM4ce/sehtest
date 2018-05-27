@@ -37,7 +37,7 @@ public class MainWindow extends JFrame implements KeyListener {
 		 */
 		
 		// Create random test
-		Table test = new Table(1, null, null);
+		Table test = new Table(1, null);
 
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -251,7 +251,7 @@ public class MainWindow extends JFrame implements KeyListener {
 		if (this.listening) {
 			int input = e.getKeyChar();
 			String direction = Ring.intToDirection(input);
-			ergebnis.setRing(direction, );
+			//ergebnis.setRing(direction, );
 		}else {
 		}
 

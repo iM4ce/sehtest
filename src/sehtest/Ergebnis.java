@@ -8,8 +8,8 @@ import java.awt.event.*;
 
 public class Ergebnis extends Table {
 
-	public Ergebnis(int random, MainWindow window, EventHandler event) {
-		super(random, window, event);
+	public Ergebnis(int random, MainWindow window) {
+		super(random, window);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -37,19 +37,7 @@ public class Ergebnis extends Table {
 
 		}
 	}
-
-
-	@Override
-	public void setRow(MainWindow window) {
-		// TODO Auto-generated method stub
-		super.setRow(window);
-	}
-
-	@Override
-	public void setRing(String direction, EventHandler event) {
-		// TODO Auto-generated method stub
-		super.setRing(direction, event);
-	}
-
-
 }
+
+
+

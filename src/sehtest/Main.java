@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Create random test
-		Table test = new Table(1, null, null);
+		Table test = new Table(1, null);
 
 		// Create window and open
 		MainWindow window = new MainWindow(test);
@@ -19,7 +19,7 @@ public class Main {
 
 		// Lets get the input
 		System.out.println("Input:");
-		Ergebnis ergebnis = new Ergebnis(0, window, null);
+		Ergebnis ergebnis = new Ergebnis(0, window);
 	
 		/*MainWindow window2 = new MainWindow(ergebnis);
 		window.setVisible(false);
